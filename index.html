@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STOPWATCH</title>
+</head>
+<body>
+    
+<div class="watchCont">
+     <div class="outerCircle">
+        <div class="innerCircle">
+            <div class="time">
+<span class="min"></span>
+<span class="sec"></span>
+<span class="msec"></span></div>
+        </div>
+    </div>
+     <div class="buttonCont">
+        <button class=" b reset  hidden" onclick="reset()">Reset</button>
+        <button class="b play" onclick="play()">Play</button>
+        <button class="b lap hidden" onclick="lap()">Lap</button>
+     </div>
+
+<div class="lapCont">
+    <ul class="laps">
+       
+        <li class="lap-item hide">
+           
+            <span class="number "></span>
+            <span class="time-stamp"></span>
+     
+        
+    </ul>
+</div>
+<div class="clearCont">
+<button class="clear b" onclick="cleary()">clear<button>
+</div></div>
+    <script src="main.js"></script>
+</body>
+</html>
