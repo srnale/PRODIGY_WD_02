@@ -30,7 +30,7 @@ let ting= new Audio("tingy.mp3");
 lap=()=>{
     ting.play(); //making lists for laps attached
     li=document.createElement("li");
-    number.innerHTML=`# ${++num}&nbsp;&nbsp;`;
+    number.innerHTML=`( ${++num} ) &nbsp;&nbsp;`;
     timeStamp.innerHTML= innerCircle.innerText;
     li.innerHTML=laps.innerHTML;
     ul.append(li); //done

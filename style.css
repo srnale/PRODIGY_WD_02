@@ -7,18 +7,27 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
+    flex-direction: column;
+    font-weight: bold;
 }
-.outerCircle{
+.watchCont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.outerCircle{
     margin-top: 30px;
     height: 300px;
     width: 300px;
     background: rgb(152,51,219);
-    background: linear-gradient(45deg, rgba(152,51,219,1) 0%, rgba(253,29,29,1) 58%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(45deg, rgb(190, 205, 20) 5%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%);
     border-radius: 50%;
     display: flex;
+    /* rgba(152,51,219,1)  */
     justify-content: center;
     align-items: center;
-    box-shadow:rgba(86, 45, 78, 0.8) 0 0 261px 140px ;
+    box-shadow:rgba(192, 189, 51, 0.8) 0 0 261px 72px ;
 }
 .innerCircle{
     color: white;
@@ -31,39 +40,57 @@ body{
     justify-content: center;
     align-items: center;
 }
+ 
 
 .buttonCont{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    gap: 20px;
 }
 .b{
     height: 60px;
-    width: 90px;
+    width: 180px;
     border-radius: 50px;
-    border: 2px solid black;
-    background-color: grey;
+    border: none;
+    background-color: rgb(255, 255, 255);
     font-size: 20px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
    
+}
+
+.reset,.lap{
+    background-color: rgb(245, 255, 48);
+    color: rgb(0, 0, 0);
+}
+.clear{
+    background-color: rgb(255 101 44);
 }
 .b:hover{
     background-color: rgb(197, 195, 195);
+}
+.lapCont{
+width: 27rem;
 }
 ul{
     list-style: none;
     overflow: auto;
  margin-top: 30px;
  height: 250px;
+width: 100%;
+color: white;
+font-size: 1.5rem;
 
 }
 ul::-webkit-scrollbar{
     display: none;
 }
 li , .lap-item{
-    background-color: red;
+    background-color: rgb(89, 16, 16);
     margin-bottom: 10px;
-    height: 30px;
+    height: 35px;
     width: 100%;
     border-radius: 100px;
     text-align: center;
